@@ -10,15 +10,3 @@ Route::middleware('auth.token')->group(function () {
     Route::prefix('orders')->group(base_path('routes/order.php'));
 });
 
-
-
-Route::middleware('auth.token')->group(function () {
-
-    Route::get('/', [OrderController::class, 'index']);
-    Route::get('/{externalId}', [OrderController::class, 'show']);
-    Route::post('/', [OrderController::class, 'store']);
-});
-
-
-Route::post('register', [AuthController::class, 'register']);
-Route::post('login', [AuthController::class, 'login']);
