@@ -1,9 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 use App\Http\Controllers\Api\ProductController;
-use App\Http\Controllers\Api\OrderController;
+use App\Http\Controllers\OrderController;
+use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth.token')->group(function () {
     Route::apiResource('products', ProductController::class);
