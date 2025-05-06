@@ -2,7 +2,6 @@
 
 namespace App\Interfaces\Http\Requests;
 
-use App\Domain\Product\DTOs\ProductDTO;
 use App\Domain\Product\Enums\ProductTypeEnum;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
